@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Sentiment Analysis</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+
+	<header>
+		<div class="container">
+		<!-- <div id="brandname">
+			DL App
+		</div> -->
+		<h1 style="text-align: center;">Sentiment Analysis App</h1>
+		
+		
+	</div>
+	</header>
+
+	<div style="text-align: center;" class="ml-container">
+		
+		<form action="{% url 'predict' %}" method="POST">{% csrf_token %}
+		<h3 style="text-align: center;">Enter the text</h3>
+		<textarea name="comment" rows="15" cols="99"></textarea>
+		<!-- <textarea name="comment" rows="4" cols="50"></textarea> -->
+		
+
+		<input type="submit" class="btn-info" value="Predict">
+		
+	</form>
+	
+	</div>
+
+	
+	
+
+</body>
+</html>
