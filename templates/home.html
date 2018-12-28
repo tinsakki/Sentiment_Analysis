@@ -3,39 +3,21 @@
 <html>
 <head>
 	<title>Sentiment Analysis</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel="stylesheet" type="text/css">
+	 <link rel="stylesheet"  href="{% static "css/style.css" %}"/>
 </head>
 <body>
-	
-	<img src="{% static "images/a.jpg" %}">
-	<header>
+	<div class="container" style="text-align: center;">
+		<img src="{% static "images/b.jpg" %}" class="image">
 		<div class="container">
-		<!-- <div id="brandname">
-			DL App
-		</div> -->
-		<h1 style="text-align: center;">Sentiment Analysis App</h1>
-		
-		
+			<h1 style="text-align: center;">Sentiment Analysis App</h1>
+		</div>
+		<div style="text-align: center;" class="ml-container">
+			<form action="{% url 'predict' %}" method="POST">{% csrf_token %}
+			<h3 style="text-align: center;">Enter the text!</h3>
+			<textarea name="comment" rows="15" cols="99"></textarea>
+			<input type="submit" class="btn-info" value="Prediction">
+			</form>
+		</div>
 	</div>
-	</header>
-
-	<div style="text-align: center;" class="ml-container">
-		
-		<form action="{% url 'predict' %}" method="POST">{% csrf_token %}
-		<h3 style="text-align: center;">Enter the text</h3>
-		<textarea name="comment" rows="15" cols="99"></textarea>
-		<!-- <textarea name="comment" rows="4" cols="50"></textarea> -->
-		
-
-		<input type="submit" class="btn-info" value="Prediction">
-		
-	</form>
-	
-	</div>
-
-	
-	
-
 </body>
 </html>
