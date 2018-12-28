@@ -25,7 +25,7 @@ SECRET_KEY = 'qgfi7&y1(v$(u83gylq3d!=&wkj*n(65=6*+=cra6ygkodvd1z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ancient-crag-45752.herokuapp.com']
+ALLOWED_HOSTS = ['ancient-crag-45752.herokuapp.com','127.0.0.1','localhost','127.0.0.1:8000']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -47,10 +48,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'sentiment_analysis.urls'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 TEMPLATES = [
     {
@@ -69,7 +71,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'sentiment_analysis.wsgi.application'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 # Database
