@@ -5,6 +5,6 @@ from . import views
 urlpatterns = [
     path(r'^admin/', admin.site.urls),
     # url(r'^about/$', views.about),
-    path('', views.homepage),
-    path('prediction/',views.prediction,name='predict'),
+    path('', views.prediction,name='predict'),
+
 ]
