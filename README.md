@@ -2,6 +2,13 @@
 
 The process of computationally identifying and categorizing opinions expressed in a piece of text, especially in order to determine whether the writer's attitude towards a particular topic, product, etc. is positive, negative view of text.
 
+### Online LiInk
+:point_down:
+
+
+https://ancient-crag-45752.herokuapp.com/
+
+
 ### Installation
 
 pip install -r requirements,txt
@@ -28,7 +35,7 @@ pip install -r requirements,txt
 
 ### Clone the repo
 ```shell
-   git clone https://github.com/tinsakki/Sentiment_Analysis.git
+$ git clone https://github.com/tinsakki/Sentiment_Analysis.git
 ```
 
 Make sure you have the following installed:
