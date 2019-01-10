@@ -24,7 +24,7 @@ pip install -r requirements,txt
 :point_down:Screenshot:
 
 <p align="center">
-  <img src="https://i.postimg.cc/tgy8Sx31/normal.png" width="600px" alt="">
+  <img src="https://i.postimg.cc/wvQt1RYp/Capture.png" width="600px" alt="">
 </p>
 
 ------------------
